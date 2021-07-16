@@ -1,0 +1,354 @@
+.header
+    position: fixed
+    background-color: #fff
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 50
+    display: flex
+    flex-direction: column
+    border-bottom: 1px solid #b7c0c9
+.top__menu
+    background-color: #1E3747
+    padding: 0.93rem 0rem
+
+.menu
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+.menu__logo--image
+    &:hover
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
+        transition: box-shadow 0.3s
+.menu__new
+    display: flex
+    width: 56.857rem
+    height: 2rem
+    align-items: center
+    justify-content: space-between
+    position: relative
+    &::before
+        position: absolute
+        content: ''
+        width: 1px
+        height: 26px
+        background-color: rgba(255, 255, 255, 0.1)
+        left: 53.7%
+.menu__info--text
+    width: 19.385rem
+    p
+        font-style: normal
+        font-weight: normal
+        font-size: 0.714rem
+        line-height: 1rem
+        color: #FFFFFF
+        opacity: 0.6
+.menu__number--one
+    display: flex
+    align-items: center
+    font-style: normal
+    font-weight: bold
+    font-size: 1.1428rem
+    line-height: 1.285rem
+    color: #FFFFFF
+    span
+        color: rgba(255, 255, 255, 0.1)
+        font-size: 1.1428rem
+        line-height: 1.285rem
+        padding: 0rem  0.7rem
+    a
+        color: #fff
+        text-decoration: none
+        &:hover
+            color: #FF9027
+            opacity: 0.8
+            transition: 0.4s
+
+
+.menu__number--image
+    width: 1.571rem
+    height: 1.571rem
+    margin-right: 0.714rem
+
+.menu__office--login
+    a
+        font-style: normal
+        font-weight: normal
+        font-size: 1rem
+        line-height: 1.148rem
+        text-decoration: none
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.2) 
+        padding-bottom: 4px
+        color: #FFFFFF
+        &:hover
+            opacity: 0.5
+            transition: 0.4s
+.menu__office
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 13.857rem
+.menu__lang--ru
+    font-style: normal
+    font-weight: bold
+    font-size: 1rem
+    line-height: 1.285rem
+    color: #FFFFFF
+    opacity: 0.5
+    position: relative
+    display: flex
+    align-items: center
+    cursor: pointer
+    &:hover
+        opacity: 1
+        transition: 0.4s
+    &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        padding-left: 4px
+        width: 9px
+        height: 6px
+        background-image: url(../img/header/bottomicon.svg)
+        background-repeat: no-repeat
+        background-position: right
+
+
+
+.nav__menu
+    width: 64.285rem
+    height: 1rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+.nav__menu--item
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1rem
+    color: #1E3747
+    text-decoration: none
+    display: flex
+    align-items: center
+    &:hover
+        color: #FF9027
+        border-bottom: 1px solid #FF9027
+        transition:  0.3s
+    &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        padding-left: 6px
+        width: 9.5px
+        height: 1.7rem
+        background-image: url(../img/header/menunavbottom.svg)
+        background-repeat: no-repeat
+        background-position: right
+
+.nav__menu--contact
+    &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        padding-left: 6px
+        width: 9.5px
+        height: 1.7rem
+        background-image: url(../img/header/menunavtop.svg)
+        background-repeat: no-repeat
+        background-position: right
+
+.menu__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.menu__product
+    display: flex
+    align-items: center
+    margin-left: 0.4rem
+    
+.menu__product--search
+    background: url(../img/header/search.svg)
+    width: 20px
+    height: 20px
+    border: none
+    outline: none
+    cursor: pointer
+    margin-right: 1.5rem
+.menu__basket
+    background-color: #FF9027
+    display: flex
+    align-items: flex-start
+    flex-direction: row
+    padding: 1.142rem 1.185rem
+.menu__basket--image
+    margin-right: 11px
+    width: 33px
+    height: 33px
+
+.menu__basket--info
+    display: flex
+    flex-direction: column
+    align-items: center
+    p
+        font-style: normal
+        font-weight: normal
+        font-size: 0.857rem
+        line-height: 1.142rem
+        color: #fff
+        margin: 0rem 0rem 1.5px 0rem
+    strong
+        font-style: normal
+        font-weight: bold
+        font-size: 1.1rem
+        line-height: 1rem
+        color: #fff
+.menu__logo--mobile
+    display: none
+.menu__content--modile
+    display: none
+.header__basket--mobile
+    display: none
+
+
+
+
+@media screen and ( max-width: 1200px )
+    .nav__menu
+        width: 59.285rem
+@media screen and ( max-width: 991px )
+
+    .header__basket--mobile
+        height: 39px
+        margin-right: 2rem
+    .header__basket--mobile
+        display: block
+    .menu__logo--mobile
+        display: block
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+
+    body.lock
+        overflow: hidden
+    .header__burger
+        display: block
+        position: fixed
+        width: 19px
+        height: 20px
+        z-index: 3
+        right: 15px
+        top: 3.3%
+    .header__burger span
+        position: absolute
+        background-color: #FFFFFF
+        position: absolute
+        left: 0
+        width: 100%
+        height: 2px
+        top: 5px
+        transition: all 0.3s ease 0s
+
+    .header__burger
+        &::before
+            content: ''
+            background-color: #FFFFFF
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+            top: 10px
+            transition: all 0.3s ease 0s
+    .header__burger
+        &::after
+            content: ''
+            background-color: #FFFFFF
+            position: absolute
+            width: 13px
+            height: 2px
+            left: 6px
+            top: 10px
+            transition: all 0.3s ease 0s
+    .header__burger:before
+        top: 0
+    .header__burger:after
+        bottom: 0
+    .menu__logo
+        display: none
+    .menu__new
+        justify-content: center
+        flex-direction: column
+        order: 3
+        height: auto
+        margin-top: 9rem
+        &::before
+            display: none
+    .menu
+        background-color: #1E3747
+        position: fixed
+        top: -105%
+        left: 0
+        width: 100%
+        height: 100%
+        padding: 30px 0px 0px 0px
+        text-align: center
+        transition: all 0.3s ease 0s
+        overflow: auto
+        justify-content: flex-start
+
+    .menu__office
+        order: 1
+        margin-top: 2rem
+
+    .menu__product
+        display: none
+    .menu__content--modile
+        display: flex
+        flex-direction: column
+        align-items: center
+        order: 2
+        margin-top: 3rem
+    .bottom__menu
+        display: none
+    
+    .nav__menu
+        flex-direction: column
+        height: auto
+        width: 100%
+        align-items: flex-start
+    .nav__menu--item
+        color: #fff
+    .menu.active
+        display: flex
+        flex-direction: column
+    .menu__content
+        display: none
+    .menu__content--modile
+        display: block
+    .menu
+        &__nav
+            margin: auto
+    .nav__menu--item
+        font-size: 1.2rem
+        &::after
+            height: 2.7rem
+            
+    .header__burger.active:before
+        transform: rotate(45deg)
+        top: 9px
+    .header__burger.active:after
+        transform: rotate(-45deg)
+        bottom: 9px
+    .header__burger.active span
+        transform: scale(0)
+    .menu.active
+        top: 0%
+    .menu__content.active
+        top: 0%
+
+    .header
+        border-bottom: none

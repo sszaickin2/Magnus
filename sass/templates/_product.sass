@@ -1,0 +1,169 @@
+.product
+    margin-top: 6.5rem
+    margin-bottom: 3.285rem
+    
+.product__content
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+
+        
+
+.product__link
+    width: 25%
+.product__content--headline
+    width: 10.271rem
+
+.product__content--headline
+    font-style: normal
+    font-weight: bold
+    font-size: 1.12rem
+    line-height: 2.285rem
+    align-items: center
+    color: #1E3747
+    opacity: 0.2
+    text-align: start
+    cursor: pointer
+    margin-bottom: 1.857rem
+    background-color: #fff
+    width: 10.271rem
+    text-decoration: none
+    span
+        border-bottom: 1px dashed #000
+    
+.product__info
+    width: 75%
+    
+
+.product__assortment
+    
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+.product__assortment--info
+    width: 22.142rem
+    height: 30rem
+    background-color: #F8F9FD
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    justify-content: center
+    margin-top: 1.428rem
+    cursor: pointer
+    &:not(:last-child)
+        margin: 0rem 1rem 1.428rem 0rem
+.product__assortment--image
+    width: 100%
+    height: 19.285rem
+
+.product__assortment--text
+    font-style: normal
+    font-weight: normal
+    font-size: 1.428rem
+    line-height: 2.142rem
+    text-align: center
+    color: #1E3747
+    width: 16.428rem
+
+.product__assortment--button
+    margin: auto
+    padding: 0.857rem 2.285rem
+    border: 1px solid #516C85
+    border-radius: 64px
+    background-color: #fff
+    cursor: pointer
+    margin-top: 3.8rem
+    font-family: NotoSans
+    font-style: bold
+    font-weight: 600
+    font-size: 0.857rem
+    line-height: 1.714rem
+    text-transform: uppercase
+    color: #4A6278
+    &:hover
+        background-color: rgba(#4A6278 , 0.3)
+        transition: all 0.8s
+.product__button
+    width: 100%
+    text-align: center
+
+.product__headline
+    font-style: normal
+    font-weight: bold
+    font-size: 1.142rem
+    line-height: 2.285rem
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    color: #1E3747
+    opacity: 0.2
+
+.product__info
+    display: none
+.product__info--block
+    display: block
+
+.product__color--link
+    font-size: 1.714rem
+    line-height: 2.285rem
+    color: #000
+    border-bottom: none
+    border-left: 4px solid #FF9027
+    opacity: 1
+    padding-left: 1.571rem
+    transition: all 0.5s
+    span
+        border-bottom: none
+    
+@media screen and ( max-width: 786px )
+    
+    .product__row
+        flex-direction: column
+    .product__content
+        flex-direction: row
+        width: max-content
+        margin-top: 0rem
+        flex-direction: row
+        align-items: flex-end
+        margin-bottom: 30px
+    .product__assortment
+        width: 100%
+        justify-content: center
+        flex-wrap: nowrap
+
+    .product__link
+        width: 100%
+        overflow-x: scroll
+    .product__content--headline
+        margin-bottom: 0rem
+        &:not(:last-child)
+            margin: 0rem 7rem 0rem 0rem
+    
+    .product__info
+        width: 100%
+        overflow-x: scroll
+    .product__assortment
+        width: max-content
+        margin-top: 0rem
+        flex-direction: row
+        align-items: center
+    .product__button
+        display: none
+    .product__assortment--info
+        width: 16.416rem
+        height: 22.333rem
+    .product__assortment--image
+        width: 15rem
+        height: auto
+    .product
+        border-top: 15px solid #F8F9FD
+        margin-top: 0rem
+        padding-top: 6.5rem
+@media screen and ( max-width: 576px )
+    .product__assortment--text
+        font-size: 12px
+        width: 150px
+        line-height: 18px
+    

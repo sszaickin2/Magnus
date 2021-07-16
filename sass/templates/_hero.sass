@@ -1,0 +1,125 @@
+.hero
+    background: url(../img/hero/background.jpg) no-repeat center / cover
+    height: 34.285rem
+    width: 100%
+    margin-top: 8.5rem
+.hero__content
+    padding-top: 8.285rem
+    width: 50%
+
+.hero__content--image
+    width: 17.214rem
+    height: auto
+    margin-bottom: 0.6714rem
+
+.hero__content--headline
+    font-style: normal
+    font-weight: normal
+    font-size: 1.714rem
+    line-height: 2.142rem
+    display: flex
+    align-items: center
+    letter-spacing: 0.05em
+    color: #FFFFFF
+    margin: 0
+    width: 32rem
+.hero__content--text
+    font-style: normal
+    font-weight: normal
+    font-size: 1.142rem
+    line-height: 2.242rem
+    display: flex
+    align-items: center
+    letter-spacing: 0.05em
+    color: #9fa9b2
+    margin-top: 1.6rem
+    margin-bottom: 3.6rem
+    width: 31rem
+.hero__content--button
+    font-family: 'NoahBold'
+    font-style: normal
+    font-weight: bold
+    font-size: 0.857rem
+    line-height: 1.071rem
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #FFFFFF
+    background: linear-gradient(90deg, #FF9027 75%, #ffa652 30%)
+    border: none
+    outline: none
+    padding: 0rem 1.642rem 0rem 2.357rem
+    cursor: pointer
+    position: relative
+    &:hover
+        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.4)
+        transition: box-shadow 0.3s
+    &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 0.928rem
+        height: 0.928rem
+        padding: 1.571rem 2rem
+        background-image: url(../img/hero/next.svg)
+        background-repeat: no-repeat
+        background-position: right
+
+.hero__element
+    display: flex
+    align-items: flex-start
+    position: relative
+    width: 50%
+    display: none
+
+
+@media screen and ( max-width: 991px )
+    .hero__content--text
+        width: 30rem
+    .hero
+        margin-top: 3.5rem
+@media screen and ( max-width: 767px )
+    .hero
+        background: url(../img/hero/background.jpg) no-repeat left / cover
+        height: 37.285rem
+    .row__hero
+        flex-direction: column
+    .hero__content--button
+        font-size: 12px
+    
+    
+
+@media screen and ( max-width: 576px )
+    .hero__content--text
+        width: 23.928rem
+        margin: 1.6rem auto 3.6rem auto
+    .hero__content
+        width: 100%
+    .hero__content--headline
+        width: 100%
+        text-align: center
+        font-size: 28px
+        letter-spacing: 0.05em
+    .hero__content
+        margin-bottom: 54px
+        padding-top: 3.071rem
+        text-align: center
+
+    .hero__element
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-top: 3.6rem
+    .hero__element--big
+        width: 169px
+        height: auto
+    .hero__element--little
+        width: 90px
+        height: auto
+    .hero__content--image
+        display: none
+    .hero__content--text
+
+        letter-spacing: 0.05em
+        text-align: center
+        font-size: 14px

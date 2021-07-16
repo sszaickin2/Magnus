@@ -1,0 +1,80 @@
+.contact
+    background: #2c4655
+    padding: 1.771rem 0rem
+    
+.contact__row
+    justify-content: space-between
+    align-items: center
+    
+.contact__content
+    width: 25.228rem
+.contact__button
+    width: 40%
+    display: flex
+    justify-content: flex-end
+    
+    
+
+.contact__content--text
+    font-style: normal
+    font-weight: normal
+    font-size: 1rem
+    line-height: 1.714rem
+    display: flex
+    align-items: center
+    color: rgba(255, 255, 255, 0.4)
+    margin: 0
+    margin-bottom: 0.4rem
+.contact__content--title
+    font-style: normal
+    font-weight: bold
+    font-size: 1.428rem
+    line-height: 1.285rem
+    color: #FFFFFF
+    text-decoration: none
+    &:hover
+        color: #FF9027
+        opacity: 0.8
+        transition: 0.4s
+
+.contact__button--call
+    font-style: normal
+    font-weight: bold
+    font-size: 0.857rem
+    line-height: 1.714rem
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    background: #FF9027
+    padding: 17px 30px
+    border: none
+    cursor: pointer
+    &:hover
+        box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
+        transition: box-shadow 0.5s
+
+@media screen and ( max-width: 767px )
+    .contact__row
+        flex-wrap: wrap
+    .contact__content
+        width: 30%
+        display: flex
+        flex-direction: column
+        align-items: center
+    .contact__button
+        width: 100%
+        margin-top: 3rem
+        display: flex
+        justify-content: center
+
+@media screen and ( max-width: 576px )
+    .contact__content
+        width: 100%
+        align-items: flex-start
+        margin-bottom: 40px
+    .contact__button
+        margin-top: 0rem
+        justify-content: flex-start
+    .contact__button--call
+        padding: 12px 76px
+    

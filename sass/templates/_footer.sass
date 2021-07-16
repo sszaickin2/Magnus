@@ -1,0 +1,142 @@
+.footer
+    background: url(../img/footer/background.jpg) no-repeat center / cover
+    padding: 3.928rem 0rem
+.footer__content--headline
+    font-style: Bold
+    font-size: 1rem
+    vertical-align: center
+    color: #FFFFFF
+    margin-top: 2.142rem
+.footer__content--text
+    font-style: normal
+    font-size: 0.857rem
+    line-height: 1.428rem
+    vertical-align: center
+    color: rgba(255, 255, 255, 0.4)
+    width: 37.857rem
+    height: auto
+
+.footer__content
+    width: 50%
+
+.footer__content--info
+    display: flex
+    justify-content: space-between
+    width: 50%
+    align-items: center
+
+.footer__info
+    background: url(../img/footer/offersbg.png)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 18.285rem
+    height: 11.571rem
+.footer__info--text
+    width: 11.214rem
+    font-style: normal
+    font-weight: bold
+    font-size: 0.857rem
+    line-height: 1.142rem
+    text-align: center
+    letter-spacing: 0.01em
+    color: #fff
+    margin-bottom: 0rem
+
+.footer__attention
+    width: 25.214rem
+    padding-left: 1rem
+
+.footer__attention--title
+    font-style: normal
+    font-weight: 600
+    font-size: 0.857rem
+    line-height: 1.428rem
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    opacity: 0.5
+    font-family: 'OpenSans'
+    margin-bottom: 1.5rem
+
+.footer__user
+    display: flex
+    justify-content: space-between
+
+.footer__link
+    font-family: NoahBold
+    font-style: normal
+    font-weight: bold
+    font-size: 0.857rem
+    line-height: 1.071rem
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #FFFFFF
+    text-decoration: none
+.footer__user--maps
+    border-bottom: 1px solid #354b59
+    width: 5.928rem
+    &:hover
+        border-bottom: 1px solid #FF9027
+        transition: 0.5s
+        color: #FF9027
+.footer__user--link
+    width: 15.785rem
+    border-bottom: 1px solid #354b59
+    &:hover
+        border-bottom: 1px solid #FF9027
+        transition: 0.5s
+        color: #FF9027
+.footer__content--logo
+    &:hover
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
+        transition: box-shadow 0.3s
+@media screen and ( max-width: 1200px )
+    .footer__user
+        flex-direction: column
+    
+
+@media screen and ( max-width: 991px )
+    .footer__content--text
+        width: 90%
+    
+
+@media screen and ( max-width: 767px )
+    .footer__content--info
+        width: 60%
+        flex-direction: column
+    .footer__info
+        margin-bottom: 2.5rem
+    .footer__content
+        width: 40%
+    .footer__user
+        flex-direction: column
+        text-align: center
+    .footer__user--link
+        margin-bottom: 20px
+    
+@media screen and ( max-width: 576px )
+    .footer__row
+        flex-direction: column
+    .footer__content
+        width: 100%
+    .footer__content--info
+        width: 100%
+        align-items: flex-start
+        margin-top: 35px
+    .footer__content--text
+        width: 100%
+    .footer__user
+        text-align: start
+        margin-top: 40px
+    .footer__attention
+        padding-left: 0rem
+    .footer__info
+        width: 100%
+        height: 13.5rem
+    .footer
+        background: url(../img/footer/background.jpg)
+        background-position: 0 0%
+        background-size: 320vh 73vh
+        background-repeat: no-repeat
+        background-color:  #1d3746

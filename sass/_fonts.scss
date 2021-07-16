@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'GothamPro';
+    src:
+    url('../fonts/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro.woff2') format('woff2');
+    
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'NoahBold';
+    src:
+    url('../fonts/NoahBold.woff') format('woff'),
+    url('../fonts/NoahBold.woff2') format('woff2');
+    
+    font-weight: bold;
+    font-style: normal;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src:
+    url('../fonts/OpenSans.woff') format('woff'),
+    url('../fonts/OpenSans.woff2') format('woff2');
+    
+    font-weight: 600;
+    font-style: normal;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src:
+    url('../fonts/NotoSans.woff') format('woff'),
+    url('../fonts/NotoSans.woff2') format('woff2');
+    
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+}

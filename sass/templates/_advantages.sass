@@ -1,0 +1,64 @@
+.advantages
+    margin: 3.1rem
+    
+.advantages__info
+    width: 14.285rem
+    align-items: center
+    display: flex
+    flex-direction: column
+    text-align: center
+        
+.advantages__row
+    justify-content: space-between
+
+.advantages__info--headline
+    font-style: normal
+    font-weight: normal
+    font-size: 1.142rem
+    line-height: 1.714rem
+    display: flex
+    margin-top: 1.4rem
+
+.advantages__info--text
+    font-style: normal
+    font-weight: normal
+    font-size: 0.98rem
+    line-height: 1.714rem
+    display: flex
+    align-items: center
+    text-align: center
+    color: #1E3747
+    margin-top: 0
+
+.advantages__info
+
+    &:not(:last-child)
+        border-right: 1px solid #f0f1f5
+        padding-right: 5.85rem
+        
+        
+@media screen and ( max-width: 1450px )
+    .advantages__info
+        &:not(:last-child)
+            padding-right: 4rem
+
+@media screen and ( max-width: 1200px )
+    .advantages__info
+        &:not(:last-child)
+            border-right: 0
+            padding-right: 0rem
+@media screen and ( max-width: 767px )
+    .advantages__row
+        flex-wrap: wrap
+        justify-content: center
+@media screen and ( max-width: 576px )
+    .advantages
+        margin-top: 12.833rem
+
+    .advantages__info
+        border-bottom: 1px solid #f0f1f5
+        margin-bottom: 2rem
+        
+
+    
+    
